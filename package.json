@@ -1,0 +1,23 @@
+{
+  "name": "doe-sangue",
+  "version": "1.0.0",
+  "description": "Doe sangue! Doe vida!",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andre-Ferraz/doe-sangue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andre-Ferraz/doe-sangue/issues"
+  },
+  "homepage": "https://github.com/Andre-Ferraz/doe-sangue#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
