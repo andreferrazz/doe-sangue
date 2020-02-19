@@ -1,64 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Doe sangue! Doe vida!</title>
-    </head>
-    <body>
-        <header>
-            <h1>Doe</h1>
-            <h2>A sua doação importa</h2>
-            <p>Até 3 vidas com 1 doação</p>
-            <p>Mais de 38.000 doações saõ necessárias todos os dias</p>
-            <p>Apenas 1,9% da população brasileira doa sangue.</p>
+
+<head>
+    <title>Doe sangue! Doe vida!</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="Imagem de DOE">
+        <h2>A sua doação importa</h2>
+        <p>Até 3 vidas com 1 doação</p>
+        <p>Mais de 38.000 doações saõ necessárias todos os dias</p>
+        <p>Apenas 1,9% da população brasileira doa sangue.</p>
+        <button>Quero ajudar</button>
+    </header>
+
+    <section class="form hide">
+        <h2>Entre na lista de doadores</h2>
+        <form action="/">
+            <input type="text" name="name" placeholder="Nome Completo">
+            <input type="text" name="email" placeholder="Email">
+            <input type="text" name="blood" placeholder="Tipo Sanguíneo">
+
             <button>Quero ajudar</button>
-        </header>
+        </form>
+    </section>
 
-        <section class="form">
-            <h2>Entre na lista de doadores</h2>
-            <form action="/">
-                <input 
-                    type="text" 
-                    name="name"
-                    placeholder="Nome Completo"
-                >
-                <input 
-                    type="text" 
-                    name="email"
-                    placeholder="Email"
-                >
-                <input 
-                    type="text" 
-                    name="blood"
-                    placeholder="Tipo Sanguíneo"
-                >
+    <main>
+        <h2>Últimos <span>doadores</span></h2>
 
-                <button>Quero ajudar</button>
-            </form>
+        <section class="donors">
+            <div class="donor">
+                <div class="blood">AB</div>
+                <p>Diego Fernandes</p>
+            </div>
+            <div class="donor">
+                <div class="blood">B+</div>
+                <p>Cleiton Souza</p>
+            </div>
+            <div class="donor">
+                <div class="blood">A+</div>
+                <p>Robson Marques</p>
+            </div>
+            <div class="donor">
+                <div class="blood">O+</div>
+                <p>Mayk Brito</p>
+            </div>
         </section>
+    </main>
 
-        <main>
-            <h2>Últimos doadores</h2>
+    <footer> Com 💟 Rocketseat</footer>
 
-            <section class="donors">
-                <div class="donor">
-                    <div class="blood">AB</div>
-                    <p>Diego Fernandes</p>
-                </div>
-                <div class="donor">
-                    <div class="blood">B+</div>
-                    <p>Cleiton Souza</p>
-                </div>
-                <div class="donor">
-                    <div class="blood">A+</div>
-                    <p>Robson Marques</p>
-                </div>
-                <div class="donor">
-                    <div class="blood">O+</div>
-                    <p>Mayk Brito</p>
-                </div>
-            </section>
-        </main>
+    <script src="scripts.js"></script>
+</body>
 
-        <footer> Com amor Rocketseat</footer>
-    </body>
 </html>
