@@ -1,14 +1,14 @@
-// configurando servidor
+// configuring server
 const express = require("express")
 const server = express()
 
-// configurar servidor para static files
+// configure server for static files
 server.use(express.static('public'))
 
-// habilitar body do form
+// enable form body
 server.use(express.urlencoded({ extended: true }))
 
-// configurar conexão com banco de dados
+// configure database connection
 const Pool = require('pg').Pool
 const db = new Pool({
     user: 'postgres',
@@ -18,16 +18,15 @@ const db = new Pool({
     database: 'doe'
 })
 
-// configurando a template engine
+// configure the template engine
 const nunjucks = require("nunjucks")
 nunjucks.configure("./", {
     express: server,
     noCache: true,
 })
 
-// configurar a apresentação da página
+// configure the index.html exibition
 server.get("/", function (req, res) {
-    // const donors = []
     db.query("SELECT id, name, email, blood FROM donors", function (err, result) {
         if (err) return res.send(err.message)
 
@@ -37,7 +36,7 @@ server.get("/", function (req, res) {
 
 })
 
-// receber e armazenar dados do cliente
+// receive and store client data
 server.post("/", function (req, res) {
     const name = req.body.name
     const email = req.body.email
@@ -56,7 +55,7 @@ server.post("/", function (req, res) {
     })
 })
 
-// iniciar o servidor
+// start server
 server.listen(3000, function () {
     console.log("Started")
 })

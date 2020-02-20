@@ -23,7 +23,7 @@ h1, h2 {
 }
 
 /* 
-    TITULOS
+    TITLES
 */
 
 header h1, main h2 {
@@ -41,7 +41,7 @@ section.form h2 {
 }
 
 /* 
-    ESTRUTURA: alinhamento
+    PAGE ALIGN
 */
 
 header, main, footer {
@@ -112,7 +112,7 @@ form button {
 }
 
 /* 
-    MAIN
+    MAIN: last donors
 */
 
 main .donors {
@@ -148,7 +148,7 @@ main .donors {
 }
 
 /* 
-    RODAPE
+    FOOTER
 */
 
 footer {
