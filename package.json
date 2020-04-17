@@ -23,7 +23,5 @@
     "nunjucks": "^3.2.1",
     "pg": "^7.18.1"
   },
-  "devDependencies": {
-    "minimist": ">=1.2.3"
-  }
+  "devDependencies": {}
 }
