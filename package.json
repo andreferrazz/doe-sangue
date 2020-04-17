@@ -19,9 +19,9 @@
   "homepage": "https://github.com/Andre-Ferraz/doe-sangue#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.3",
     "nunjucks": "^3.2.1",
-    "pg": "^7.18.1"
+    "pg": "^7.18.2"
   },
   "devDependencies": {}
 }
