@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
 }
 
@@ -18,15 +19,18 @@ body {
     background-color: #f9f9f9
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #000000cc;
 }
+
 
 /* 
     TITLES
 */
 
-header h1, main h2 {
+header h1,
+main h2 {
     margin-bottom: 70px;
 }
 
@@ -40,19 +44,25 @@ section.form h2 {
     font-size: 18px;
 }
 
+
 /* 
     PAGE ALIGN
 */
 
-header, main, footer {
+header,
+main,
+footer {
     text-align: center;
 }
 
-header, .form, main {
+header,
+.form,
+main {
     margin: 0 auto 70px auto;
     width: 90%;
     max-width: 500px;
 }
+
 
 /* 
     HEADER
@@ -68,6 +78,11 @@ header button {
     font-weight: bold;
 }
 
+header button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
 .logo {
     width: 120px;
     margin: 70px 0;
@@ -76,6 +91,7 @@ header button {
 header p {
     font-size: 14px;
 }
+
 
 /* 
     FORM
@@ -91,7 +107,8 @@ section.form {
     border-radius: 6px;
 }
 
-form input, form button {
+form input,
+form button {
     width: 100%;
     margin-bottom: 4px;
     padding: 8px 16px;
@@ -110,6 +127,7 @@ form input::placeholder {
 form button {
     font-weight: bold;
 }
+
 
 /* 
     MAIN: last donors
@@ -147,6 +165,7 @@ main .donors {
     font-size: 14px;
 }
 
+
 /* 
     FOOTER
 */
@@ -156,6 +175,7 @@ footer {
     padding: 16px;
     border: 1px solid #eee
 }
+
 
 /* 
     JAVASCRIPT
